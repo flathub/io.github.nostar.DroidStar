@@ -19,7 +19,7 @@
       where platform and arch can be any of the following.
       platform: linux, darwin, winnt, android, ios; arch: x86_64, arm, arm64.
       The platform and arch for your device are identified on the About tab.</p>
-    <p>Download: https://ke0zvd.com/installing-the-software-vocoder/</p>
+    <p>Download: https://github.com/lu9dce/droidstar_vocoder_plugin</p>
   </description>
   <project_license>GPL-3.0-or-later</project_license>
   <metadata_license>CC0-1.0</metadata_license>
