@@ -17,6 +17,7 @@ modules:
     build-commands:
       - make
       - install -Dm644 libimbe_vocoder.a $FLATPAK_DEST/lib/libimbe_vocoder.a
+      - ln -s $FLATPAK_DEST/lib/libimbe_vocoder.a $FLATPAK_DEST/lib/libvocoder.a
       - mkdir -p $FLATPAK_DEST/include
       - install imbe_vocoder_api.h  $FLATPAK_DEST/include/imbe_vocoder_api.h
     sources:
