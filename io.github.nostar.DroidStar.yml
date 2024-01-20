@@ -1,6 +1,6 @@
 app-id: io.github.nostar.DroidStar
 runtime: org.kde.Platform
-runtime-version: 5.15-22.08
+runtime-version: '6.6'
 sdk: org.kde.Sdk
 command: DroidStar
 finish-args:
@@ -12,21 +12,10 @@ finish-args:
   - --device=all
   - --share=network
 modules:
-  - name: imbe_vocoder
-    buildsystem: simple
-    build-commands:
-      - make
-      - install -Dm644 libimbe_vocoder.a $FLATPAK_DEST/lib/libimbe_vocoder.a
-      - mkdir -p $FLATPAK_DEST/include
-      - install imbe_vocoder_api.h  $FLATPAK_DEST/include/imbe_vocoder_api.h
-    sources:
-      - type: git
-        url: https://github.com/nostar/imbe_vocoder.git
-        commit: 03423cb00b8e9ba1be164493e8b98b5bd7c1508c
   - name: DroidStar
     buildsystem: simple
     build-commands:
-      - qmake LIBS+=-L$FLATPAK_DEST/lib DroidStar.pro
+      - qmake DroidStar.pro
       - make -j`nproc`
     post-install:
       - install -D io.github.nostar.DroidStar.metainfo.xml $FLATPAK_DEST/share/metainfo/io.github.nostar.DroidStar.metainfo.xml
@@ -36,7 +25,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/nostar/DroidStar.git
-        commit: 2f695e63eb5a1064897198abdd65de0eaf30ca1f
+        commit: 74637287fd52f5ccd8c97b816c7e8bb9b3bbb2ec
       - type: file
         path: io.github.nostar.DroidStar.desktop
       - type: file
