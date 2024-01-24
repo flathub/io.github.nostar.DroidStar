@@ -25,7 +25,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/nostar/DroidStar.git
-        commit: 74637287fd52f5ccd8c97b816c7e8bb9b3bbb2ec
+        commit: 0d0a0c8e913f6fcd31ed36592ac0b83c9f981a0b
       - type: file
         path: io.github.nostar.DroidStar.desktop
       - type: file
