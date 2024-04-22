@@ -2,23 +2,23 @@
 <component type="desktop-application">
   <id>io.github.nostar.DroidStar</id>
   <name>DroidStar</name>
-  <summary>A D-Star client for PC</summary>
+  <summary>A digital voice client</summary>
   <description>
-    <p>DroidStar is an application that allows you to use the digital mode D-Star from a computer.
-      It connects to a reflector server and sends and receives audio encoded in AMBE. It also
-      displays information about the users and modules connected to the reflector.</p>
-    <p>A vocoder plugin can be downloaded from a URL, which will place the vocoder
-      into the correct location for the platform. Add a full http url, including the filename,
-      to the Vocoder URL option on the settings tab, and click the Download vocoder button.</p>
+    <p>DroidStar is an application that allows you to use the digital modes such as M17, D-Star,
+      Fusion and DMR from a computer. It connects to a reflector server and sends and receives
+      audio encoded in Codec2 or AMBE. It also displays information about the users and modules
+      connected to the reflector.</p>
+    <p>A vocoder plugin can be downloaded from a URL, which will place the vocoder into the correct
+      location for the platform. Add a full http url, including the filename, to the Vocoder URL
+      option on the settings tab, and click the Download vocoder button.</p>
     <p>For Android and iOS devices, the vocoder URL download method is the only way to
-      load a vocoder plugin. For Linux/MacOS/Windows, a vocoder can also be manually placed.</p>
+      load a vocoder plugin. For Linux, a vocoder can also be manually placed.</p>
     <p>Copy the plugin to the system settings file location. On Linux, this is
       ~/.var/app/io.github.nostar.DroidStar/config/dudetronics - it is the same place
       where the host and id files are located (DMRHosts.txt, DMRIDs.data, etc).</p>
     <p>The vocoder plugin filename must be named vocoder_plugin.platform.arch
-      where platform and arch can be any of the following.
-      platform: linux, darwin, winnt, android, ios; arch: x86_64, arm, arm64.
-      The platform and arch for your device are identified on the About tab.</p>
+      where platform should be linux and arch can be x86_64 or arm64.
+      The arch for your device is identified on the About tab.</p>
     <p>Download: https://github.com/lu9dce/droidstar_vocoder_plugin</p>
   </description>
   <project_license>GPL-3.0-or-later</project_license>
@@ -26,7 +26,6 @@
   <developer_name>Nostar</developer_name>
   <categories>
     <category>HamRadio</category>
-    <category>Communication</category>
   </categories>
   <url type="homepage">https://github.com/nostar/droidstar</url>
   <screenshots>
@@ -40,5 +39,6 @@
   <releases>
     <release version="1.0.1-git" date="2024-01-24"/>
   </releases>
+  <launchable type="desktop-id">io.github.nostar.DroidStar.desktop</launchable>
   <update_contact>castilloeduardo@outlook.com.ar</update_contact>
 </component>
