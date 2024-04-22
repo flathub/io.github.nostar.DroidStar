@@ -4,7 +4,7 @@
   <name>DroidStar</name>
   <summary>A digital voice client</summary>
   <description>
-    <p>DroidStar is an application that allows you to use the digital modes such as M17, D-Star,
+    <p>DroidStar is an application that allows you to use digital modes such as M17, D-Star,
       Fusion and DMR from a computer. It connects to a reflector server and sends and receives
       audio encoded in Codec2 or AMBE. It also displays information about the users and modules
       connected to the reflector.</p>
@@ -17,8 +17,8 @@
       ~/.var/app/io.github.nostar.DroidStar/config/dudetronics - it is the same place
       where the host and id files are located (DMRHosts.txt, DMRIDs.data, etc).</p>
     <p>The vocoder plugin filename must be named vocoder_plugin.platform.arch
-      where platform should be linux and arch can be x86_64 or arm64.
-      The arch for your device is identified on the About tab.</p>
+      where platform should be linux and arch can be x86_64 or arm64 depending
+      on your system. The arch for your device is identified on the About tab.</p>
     <p>Download: https://github.com/lu9dce/droidstar_vocoder_plugin</p>
   </description>
   <project_license>GPL-3.0-or-later</project_license>
