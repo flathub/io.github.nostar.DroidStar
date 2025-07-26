@@ -20,7 +20,7 @@
     <p>The vocoder plugin filename must be named vocoder_plugin.platform.arch
       where platform should be linux and arch can be x86_64 or arm64 depending
       on your system. The arch for your device is identified on the About tab.</p>
-    <p>Vocoder download: https://github.com/lu9dce/droidstar_vocoder_plugin</p>
+    <p>Vocoder download: http://pizzanbeer.net/droidstar/plugins/</p>
   </description>
   <project_license>GPL-3.0-or-later</project_license>
   <metadata_license>CC0-1.0</metadata_license>
