@@ -41,5 +41,4 @@
     <release version="1.0.1-git" date="2024-01-24"/>
   </releases>
   <launchable type="desktop-id">io.github.nostar.DroidStar.desktop</launchable>
-  <update_contact>castilloeduardo@outlook.com.ar</update_contact>
 </component>
